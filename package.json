@@ -5,8 +5,10 @@
   "scripts": {
     "start": "electron ."
   },
-  "author": "Martin A. Jackson ",
+  "repository": "https://github.com/kamontat/electron-run-shell-example",
+  "license": "ISC",
+  "author": "Kamontat Chantrachirathumrong",
   "devDependencies": {
-    "electron-prebuilt": "^0.32.2"
+    "electron": "~1.6.2"
   }
 }
