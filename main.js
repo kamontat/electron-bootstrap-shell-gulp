@@ -1,4 +1,5 @@
 const electron = require('electron')
+var client = require('electron-connect').client;
 const { app, BrowserWindow } = electron
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -25,6 +26,8 @@ app.on('ready', function () {
 
   // Open the DevTools.
   mainWindow.openDevTools();    // requires a height 410px 
+
+  client.create(mainWindow);
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
