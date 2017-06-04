@@ -3,10 +3,11 @@ An HTML5 stand alone app using GitHub Electron (Chrome engine + Node.js) -- this
 
 # SETUP
 
-1. Install GitHub's Electron
-2. Clone this repository
-3. initialize node modules
-4. run application
+1. Install npm and github's electron
+2. run `npm install` on project path
+3. to run the application
+    1. run by `npm start` or `electron .` - this when you edited something your need to stop and run again to see the changed
+    2.  run by `gulp` - this with auto reload the app
 
 #### Install GitHub's Electron
 ```Shell
