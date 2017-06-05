@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Hello World!</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <script>
-    // get electron version
-    // document.write(process.version)
-    // document.write(process.versions['electron'])
-    require('electron-connect').client.create();
-  </script>
-  <script src="./js/gui-funct.js"></script>
-  <script>
-    // GLUE to the screen
-    function getDroidOutput() { return document.getElementById("droid-output"); };
-    function getStatus() { return document.getElementById("status"); };
-    // End of GLUE
-    backgroundProcess();
-  </script>
+    <title>Download-UI</title>
+    <link rel="stylesheet" href="./www/css/main.css">
+    <script>
+        // get electron version
+        // document.write(process.version)
+        // document.write(process.versions['electron'])
+        require('electron-connect').client.create();
+    </script>
+    <script src="./www/js/app-action.js"></script>
+    <script src="./www/js/component-action.js"></script>
+    <script src="./www/js/auto-grow.js"></script>
 </head>
 
 <body>
-  <h1>Download-UI Page</h1>
-  <input type="text" />
-  <hr>
-  <textarea rows="20" cols="90" id="droid-output" disabled="true"></textarea>
-  <div id="status"></div>
-  <hr>
+    <div class="container-fluid">
+        <h1 class="text-center">Download-UI Page</h1>
+        <form>
+            <div class="form-group">
+                <select class="form-control">
+          <option>Download</option>
+          <option>Update</option>
+        </select>
+            </div>
+            <div class="form-group" id="download_form" style="display: none;">
+                <label for="input_link">Link</label>
+                <input type="text" class="form-control" id="link" aria-describedby="link of dek-d" placeholder="Enter link">
+                <small class="form-text text-muted"> link of dek-d (https://[writer.|my.|...]dek-d.com/&lt;name&gt;/[story]/view.php?id=&lt;id&gt;</small>
+            </div>
+            <div class="form-group" id="update_form" style="display: none;">
+                <label for="input_file">Folder input</label>
+                <input type='file' class="form-control-file" id='input_file'>
+                <small class="form-text text-muted"> We'll never share your email with anyone else.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <textarea class="form-control" id="output" rows="3" disabled="true"></textarea>
+        <div id="status"></div>
+        <hr>
+    </div>
 </body>
 
 </html>

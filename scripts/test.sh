@@ -2,11 +2,11 @@
 
 printf "Hello"
 
-sleep 10
+sleep 2
 
 printf "Hi There"
 
-sleep 5
+sleep 1
 
 printf "This is a long long text.....asdasdasdasdasdasdadadadasdadadadadasdadadadadadadasd"
 printf "Hello there thisi a test ogf the emergency broadcast system, if this were a real emergency you problably wouldnt be watching tv."

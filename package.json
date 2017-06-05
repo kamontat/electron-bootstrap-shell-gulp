@@ -1,21 +1,28 @@
 {
-  "name": "your-app",
-  "version": "0.0.1",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "dev": "gulp"
-  },
-  "repository": "https://github.com/kamontat/electron-run-shell-example",
-  "license": "ISC",
-  "author": "Kamontat Chantrachirathumrong",
-  "devDependencies": {
-    "electron": "~1.6.2",
-    "electron-connect": "^0.6.1",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
-  },
-  "dependencies": {
-    "bootstrap-sass": "^3.3.7"
-  }
+    "name": "your-app",
+    "version": "0.0.1",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "dev": "gulp"
+    },
+    "repository": "https://github.com/kamontat/electron-run-shell-example",
+    "license": "ISC",
+    "author": "Kamontat Chantrachirathumrong",
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-preset-env": "^1.5.1",
+        "electron": "~1.6.2",
+        "electron-connect": "^0.6.1",
+        "gulp": "^3.9.1",
+        "gulp-babel": "^6.1.2",
+        "gulp-sass": "^3.1.0"
+    },
+    "dependencies": {
+        "bootstrap-sass": "^3.3.7",
+        "jquery": "^3.2.1"
+    },
+    "presets": [
+        "env"
+    ]
 }
