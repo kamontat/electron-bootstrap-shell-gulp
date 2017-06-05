@@ -25,3 +25,7 @@ $ mkdir ~/projects/
 $ git clone https://github.com/kamontat/electron-bootstrap-shell-gulp.git example
 $ cd example
 ```
+
+#### Example Image
+
+![image1](./assets/main.png)
