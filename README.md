@@ -1,5 +1,12 @@
 An HTML5 stand alone app using GitHub Electron (Chrome engine + Node.js) -- this is a GUI wrapper example that runs and process output of a bash shell command. 
 
+# VERSION
+- Electron: 1.6.10
+- Node: 7.4.0
+- Chromium: 56.0.2924.87
+- V8: 5.6.326.50
+
+
 # SETUP
 1. Install npm and github's electron
 2. run `npm install` on project path
